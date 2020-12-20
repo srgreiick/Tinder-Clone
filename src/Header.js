@@ -2,10 +2,12 @@ import React from 'react'
 import "./Header.css"
 import PersonIcon from '@material-ui/icons/Person';
 import IconButton from '@material-ui/core/IconButton';
+import ForumButton from '@material-ui/icons/Forum';
+
 
 function Header(){
     return(
-        <div className='header'>
+    <div className='header'>
             <IconButton>
             <PersonIcon fontSize="large" className="header_icon"/>
             </IconButton>
@@ -16,9 +18,11 @@ function Header(){
         alt="tinder-ico"
         />
 
+            <IconButton>
+                <ForumButton fontSize="large" className="header_icon"/>
+            </IconButton>
 
-
-        </div>
+    </div>
     )
 }
 
